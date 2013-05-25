@@ -1,10 +1,15 @@
 package com.eurojava.solveandroidapp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class MainActivity extends Activity {
     
@@ -28,6 +33,8 @@ public class MainActivity extends Activity {
 
         if (savedInstanceState == null) {
             // po uruchomieniu
+            storeDataToStream();
+            storeDataToMedia();
             billBeforeTax = 0.0;
             taxAmount = .23;
             finalBill = 0.0;
@@ -64,6 +71,32 @@ public class MainActivity extends Activity {
             updateTaxAndFinalBill();
         }
     };
+    
+    private void storeDataToStream() {
+        FileOutputStream fos;
+        try {
+            fos = openFileOutput("test.txt", Context.MODE_PRIVATE);
+            fos.write(TOTAL_BILL.getBytes());
+            fos.close();
+        } catch (FileNotFoundException e) {
+          e.printStackTrace();
+        } catch (IOException e) {
+          e.printStackTrace();  
+        }
+    }
+    
+    private void storeDataToMedia() {
+      FileWriter fw;
+      try {
+          fw = new FileWriter("/sdcard/test.txt");
+          fw.append("test test test");
+          fw.flush();
+          fw.close();                 
+      } catch (IOException e) {
+          e.printStackTrace();  
+        } 
+          
+    }
 
     private void updateTaxAndFinalBill() {
         double taxAmount = Double.parseDouble(taxAmountET.getText().toString());
