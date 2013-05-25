@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/billTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/bill_text_view" />
+
+    <EditText
+        android:id="@+id/billEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/billTextView"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/bill_edit_text" />
+
+    <TextView
+        android:id="@+id/taxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/billTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/billEditText"
+        android:text="@string/tax_text_view" />
+
+    <EditText
+        android:id="@+id/taxEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalTextView"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/taxTextView"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:text="@string/tax_edit_text" />
+
+    <TextView
+        android:id="@+id/finalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finalEditText"
+        android:layout_below="@+id/billEditText"
+        android:layout_marginTop="14dp"
+        android:text="@string/final_text_view" />
+
+    <EditText
+        android:id="@+id/finalEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/taxEditText"
+        android:layout_below="@+id/finalTextView"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/final_edit_text" />
+
+    
+</RelativeLayout>

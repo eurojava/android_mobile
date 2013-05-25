@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tax Android App</string>
+    
+    <string name="bill_text_view">Netto</string>
+    <string name="bill_edit_text">0.0</string>
+    
+    <string name="tax_text_view">Podatek</string>
+    <string name="tax_edit_text">0.23</string>
+    
+    <string name="final_text_view">Total</string>
+    <string name="final_edit_text">0.0</string>
+            
+    <string name="change_tax_text_view">Zmiana podatku</string>        
+            
+</resources>
