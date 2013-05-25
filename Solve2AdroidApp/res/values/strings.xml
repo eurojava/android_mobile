@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pomocnik kelnera</string>
+    <string name="action_settings">Ustawienia</string>
+    
+    <string name="bill_text_view">Rach</string>
+    <string name="bill_edit_text">0.0</string>
+    
+    <string name="tip_text_view">Napiw</string>
+    <string name="tip_edit_text">.1</string>
+    
+    <string name="final_bill_text_view">Total</string>
+    <string name="final_bill_edit_text">0.0</string>
+    
+    <string name="change_tip_text_view">Zmiana Napiw</string>
+    
+    <string name="intro_text_view">Szczegoly</string>
+    
+    <string name="intro_friendly_text_view">Mily</string>
+    <string name="intro_specials_text_view">Szczegolowy</string>
+    <string name="intro_opinion_text_view">Inny</string>
+    
+    <string name="available_text_view">Obsluga</string>
+    <string name="available_bad_radiobutton">Zla</string>
+    <string name="available_ok_radiobutton">OK</string>
+    <string name="available_good_radiobutton">Dobra</string>
+    
+    <string name="time_waiting_text_view">Czas oczekiwania</string>
+    <string name="start_chronometer_button">Start</string>
+    <string name="pause_chronometer_button">Pauza</string>
+    <string name="reset_chronometer_button">Reset</string>
+    
+    <string-array name="problem_solving">
+        <item>Dostepnosc</item>
+        <item>Zla</item>
+        <item>OK</item>
+        <item>Dobra</item>
+    </string-array>
+
+</resources>
